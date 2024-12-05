@@ -80,8 +80,8 @@
               required
             />
             <br />
-            <small class="lato-regular" id="password-hint">Debe tener al menos 8 caracteres.</small>
           </div>
+          <small class="lato-regular" id="password-hint">Debe tener al menos 8 caracteres.</small>
           <div class="confirm-user-password">
             <label class="lato-bold" for="confirm-password"
               >Confirm Password (required):</label
@@ -107,17 +107,17 @@
         </form>
       </section>
       <aside class="progress-container">
-        <progress
+        <div
           class="progress-bar"
+          role="status"
           aria-live="polite"
-          value="50"
-          max="100"
-        ></progress>
+          aria-label="progress"
+        ></div>
         <p class="lato-black">Profile Completeness</p>
         <article class="todo-progress-container">
-          <strong class="lato-bold todos" tabindex="0">Create Account</strong>
-          <strong class="lato-bold todos" tabindex="0">Update Roadmap Progress</strong>
-          <strong class="lato-bold todos" tabindex="0">Setup Public Profile</strong>
+          <s><strong class="lato-bold todos" tabindex="0">Create Account</strong></s>
+          <s><strong class="lato-bold todos" tabindex="0">Update Roadmap Progress</strong></s>
+          <s><strong class="lato-bold todos" tabindex="0">Setup Public Profile</strong></s>
           <strong class="lato-bold todos" tabindex="0"
             >Complete your first project</strong
           >
@@ -125,7 +125,7 @@
         </article>
       </aside>
     </main>
-    <footer>
+    <footer class="footer-bottom">
       <h4 class="lato-thin">&copy; Rights deserved 2025</h4>
     </footer>
     <script type="application/ld+json">
